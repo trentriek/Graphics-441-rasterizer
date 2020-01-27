@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{87AE9984-90A6-3C00-864F-EFB3C25F3877}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>A1</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">A1.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">A1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">A1.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">A1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">A1.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">A1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">A1.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">A1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Trent/Senior Year/CSCE441/projects/Assignment1/build/Debug/A1.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Trent/Senior Year/CSCE441/projects/Assignment1/build/Debug/A1.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Trent/Senior Year/CSCE441/projects/Assignment1/build/Release/A1.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Trent/Senior Year/CSCE441/projects/Assignment1/build/Release/A1.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Trent/Senior Year/CSCE441/projects/Assignment1/build/MinSizeRel/A1.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Trent/Senior Year/CSCE441/projects/Assignment1/build/MinSizeRel/A1.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Trent/Senior Year/CSCE441/projects/Assignment1/build/RelWithDebInfo/A1.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Trent/Senior Year/CSCE441/projects/Assignment1/build/RelWithDebInfo/A1.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Trent\Senior Year\CSCE441\projects\Assignment1\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Trent/Senior Year/CSCE441/projects/Assignment1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\bin\cmake.exe" "-SC:/Trent/Senior Year/CSCE441/projects/Assignment1" "-BC:/Trent/Senior Year/CSCE441/projects/Assignment1/build" --check-stamp-file "C:/Trent/Senior Year/CSCE441/projects/Assignment1/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCCompiler.cmake.in;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCCompilerABI.c;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCXXCompiler.cmake.in;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCXXCompilerABI.cpp;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCompilerIdDetection.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineCCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineCXXCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineCompileFeatures.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineCompilerABI.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineCompilerId.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineRCCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineSystem.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeFindBinUtils.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeRCCompiler.cmake.in;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeSystem.cmake.in;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeTestCCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeTestCXXCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeTestCompilerCommon.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeTestRCCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CompilerId\VS-10.vcxproj.in;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Internal\FeatureTesting.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Platform\Windows-Determine-CXX.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\CMakeFiles\3.16.2\CMakeCCompiler.cmake;C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\CMakeFiles\3.16.2\CMakeCXXCompiler.cmake;C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\CMakeFiles\3.16.2\CMakeRCCompiler.cmake;C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\CMakeFiles\3.16.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Trent/Senior Year/CSCE441/projects/Assignment1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\bin\cmake.exe" "-SC:/Trent/Senior Year/CSCE441/projects/Assignment1" "-BC:/Trent/Senior Year/CSCE441/projects/Assignment1/build" --check-stamp-file "C:/Trent/Senior Year/CSCE441/projects/Assignment1/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCCompiler.cmake.in;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCCompilerABI.c;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCXXCompiler.cmake.in;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCXXCompilerABI.cpp;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCompilerIdDetection.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineCCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineCXXCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineCompileFeatures.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineCompilerABI.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineCompilerId.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineRCCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineSystem.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeFindBinUtils.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeRCCompiler.cmake.in;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeSystem.cmake.in;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeTestCCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeTestCXXCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeTestCompilerCommon.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeTestRCCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CompilerId\VS-10.vcxproj.in;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Internal\FeatureTesting.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Platform\Windows-Determine-CXX.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\CMakeFiles\3.16.2\CMakeCCompiler.cmake;C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\CMakeFiles\3.16.2\CMakeCXXCompiler.cmake;C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\CMakeFiles\3.16.2\CMakeRCCompiler.cmake;C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\CMakeFiles\3.16.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Trent/Senior Year/CSCE441/projects/Assignment1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\bin\cmake.exe" "-SC:/Trent/Senior Year/CSCE441/projects/Assignment1" "-BC:/Trent/Senior Year/CSCE441/projects/Assignment1/build" --check-stamp-file "C:/Trent/Senior Year/CSCE441/projects/Assignment1/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCCompiler.cmake.in;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCCompilerABI.c;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCXXCompiler.cmake.in;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCXXCompilerABI.cpp;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCompilerIdDetection.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineCCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineCXXCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineCompileFeatures.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineCompilerABI.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineCompilerId.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineRCCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineSystem.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeFindBinUtils.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeRCCompiler.cmake.in;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeSystem.cmake.in;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeTestCCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeTestCXXCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeTestCompilerCommon.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeTestRCCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CompilerId\VS-10.vcxproj.in;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Internal\FeatureTesting.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Platform\Windows-Determine-CXX.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\CMakeFiles\3.16.2\CMakeCCompiler.cmake;C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\CMakeFiles\3.16.2\CMakeCXXCompiler.cmake;C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\CMakeFiles\3.16.2\CMakeRCCompiler.cmake;C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\CMakeFiles\3.16.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Trent/Senior Year/CSCE441/projects/Assignment1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\bin\cmake.exe" "-SC:/Trent/Senior Year/CSCE441/projects/Assignment1" "-BC:/Trent/Senior Year/CSCE441/projects/Assignment1/build" --check-stamp-file "C:/Trent/Senior Year/CSCE441/projects/Assignment1/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCCompiler.cmake.in;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCCompilerABI.c;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCXXCompiler.cmake.in;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCXXCompilerABI.cpp;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeCompilerIdDetection.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineCCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineCXXCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineCompileFeatures.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineCompilerABI.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineCompilerId.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineRCCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeDetermineSystem.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeFindBinUtils.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeRCCompiler.cmake.in;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeSystem.cmake.in;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeTestCCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeTestCXXCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeTestCompilerCommon.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CMakeTestRCCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\CompilerId\VS-10.vcxproj.in;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Internal\FeatureTesting.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Platform\Windows-Determine-CXX.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Trent\Senior Year\CSCE441\cmake-3.16.2-win64-x64\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\CMakeFiles\3.16.2\CMakeCCompiler.cmake;C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\CMakeFiles\3.16.2\CMakeCXXCompiler.cmake;C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\CMakeFiles\3.16.2\CMakeRCCompiler.cmake;C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\CMakeFiles\3.16.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\CommonMethods.cpp" />
+    <ClCompile Include="..\src\Triangle.cpp" />
+    <ClCompile Include="C:\Trent\Senior Year\CSCE441\projects\Assignment1\src\Image.cpp" />
+    <ClCompile Include="C:\Trent\Senior Year\CSCE441\projects\Assignment1\src\main.cpp" />
+    <ClInclude Include="..\src\CommonMethods.h" />
+    <ClInclude Include="..\src\Triangle.h" />
+    <ClInclude Include="C:\Trent\Senior Year\CSCE441\projects\Assignment1\src\Image.h" />
+    <ClInclude Include="C:\Trent\Senior Year\CSCE441\projects\Assignment1\src\stb_image_write.h" />
+    <ClInclude Include="C:\Trent\Senior Year\CSCE441\projects\Assignment1\src\tiny_obj_loader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\ZERO_CHECK.vcxproj">
+      <Project>{5FBADFFF-01F0-3E0C-8EAE-D6BF3D8EB721}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
