@@ -34,11 +34,6 @@ void CommonMethods::getColors(float& w, float& v, float& z, unsigned int& p1r, u
 
 }
 
-
-
-
-
-
 void CommonMethods::getTriangleBoxDimensions(int& x0, int& x1, int& x2, int& y0, int& y1, int& y2, 
 											 int& one, int& two, int& three, int& four) {
 
