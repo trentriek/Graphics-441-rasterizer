@@ -8,7 +8,7 @@
 using namespace std;
 
 //methods for steps in rasterization
-float get_scale(vector<float>& posBuf, float& tx, float& ty, float width, float height);
+float get_scale(vector<float>& posBuf, float& tx, float& ty, float width, float height, float& minZ, float& maxZ);
 int st(float& point, float& scale, float& translation);
 
 //main function//
@@ -67,13 +67,16 @@ int main(int argc, char **argv)
 	//before I do anything, I must find the correct scale for the obj and translation for each side
 	float ty; //translation x and y
 	float tx;
-	float scale = get_scale(posBuf, tx, ty, atoi(argv[3]), atoi(argv[4]) ); //returns both the scale and the translation
+	float minZ;
+	float maxZ;
+	float scale = get_scale(posBuf, tx, ty, atoi(argv[3]), atoi(argv[4]), minZ, maxZ); //returns both the scale and the translation
 	
 	//instantiate an image to print out with the correct size
 	auto image = make_shared<Image>(atoi(argv[3]), atoi(argv[4]));
 
 	//now I will itterate through the list of verticies and create a list of triangles.
 	vector<Triangle> object;
+	CommonMethods::zBuffer ZBuf= CommonMethods::zBuffer(atoi(argv[3]), atoi(argv[4]), minZ, maxZ);
 	vector<float>::iterator index = posBuf.begin();
 	while(index != posBuf.end() )
 	{
@@ -106,7 +109,7 @@ int main(int argc, char **argv)
 		//this prints out the bounding box. 
 		//triangleindex->printBoundingBox(*image);
 		//this prints out a triangle
-		triangleindex->printTriangle(*image, false);
+		triangleindex->printTriangle(*image, atoi(argv[5]), ZBuf);
 		triangleindex++;
 	}
 
@@ -119,9 +122,10 @@ int main(int argc, char **argv)
 
 //****************Helper functions************************//
 
-float get_scale(vector<float>& posBuf, float& tx, float& ty, float width, float height) {
+float get_scale(vector<float>& posBuf, float& tx, float& ty, float width, float height, float& minZ, float& maxZ) {
 	vector<float>::iterator index = posBuf.begin();
 	float minX = 0.0f, maxX = 0.0f, minY = 0.0f, maxY = 0.0f;
+	minZ = 0.0f, maxZ = 0.0f;
 
 	while (index != posBuf.end()) //find the minimum and maximum values of the x & ycoordinates
 	{
@@ -130,14 +134,19 @@ float get_scale(vector<float>& posBuf, float& tx, float& ty, float width, float 
 		index++;
 		if (*index > maxY) maxY = *index;
 		if (*index < minY) minY = *index;
-		index = index + 2;
+		index++;
+		if (*index > maxZ) maxZ = *index;
+		if (*index < minZ) minZ = *index;
+		index++;
 	}
 
 	float midx = maxX - ((maxX - minX) * 0.5f); //then get the middle value between these two respective values
 	float midy = maxY - ((maxY - minY) * 0.5f);
+	//float midz = maxZ - ((maxZ - minZ) * 0.5f);
 
 	float xSize = width / (abs(minX) + abs(maxX)); //find the scale for the x and y axsis
 	float ySize = height / (abs(minY) + abs(maxY));
+	//float ZSize = ? / (abs(minY) + abs(maxY));
 
 	float theScale = xSize < ySize ? xSize : ySize; //set the scale, and determine the translation values based on mid points & scale
 	tx = (width * 0.5f) - (theScale * midx);

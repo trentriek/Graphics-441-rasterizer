@@ -6,7 +6,7 @@
 using namespace std;
 
 Triangle::Triangle() {}
-Triangle::Triangle(int& x1, int& y1, int& z1, int& x2, int& y2, int& z2, int& x3, int& y3, int& z3, 
+Triangle::Triangle(int& x1, int& y1, float& z1, int& x2, int& y2, float& z2, int& x3, int& y3, float& z3,
 					unsigned int& r1, unsigned int& g1, unsigned int& b1, unsigned int& r2, unsigned int& g2, unsigned int& b2,
 					unsigned int& r3, unsigned int& g3, unsigned int& b3 )
 {
@@ -25,9 +25,11 @@ Triangle::Triangle(Triangle::vertex one, Triangle::vertex two, Triangle::vertex 
 }
 Triangle::~Triangle() {}
 
-void Triangle::printTriangle(Image& im, bool solidcolor) {
-	for (int i = triangleDimensions[0]; i < triangleDimensions[1]; i++) {
-		unsigned int r = 0;
+
+//print triangle handles printing colors 
+void Triangle::printTriangle(Image& im, short int colortype, CommonMethods::zBuffer& zbuf) {
+	for (int i = triangleDimensions[0]; i < triangleDimensions[1]; i++) { 
+		unsigned int r = 255;
 		unsigned int g = 0;
 		unsigned int b = 0;
 
@@ -36,22 +38,42 @@ void Triangle::printTriangle(Image& im, bool solidcolor) {
 			float v = 0.0f;
 			float z = 0.0f;
 			bool isInside = false;
-			//if (i == 230 && j == 260) {
-			//	cout << "" << endl;
-			//}
+			
 			CommonMethods::barycentricPoints(i, j,
 				v0.x, v1.x, v2.x,
 				v0.y, v1.y, v2.y,
 				w, v, z, isInside);
 
 			if (isInside) {
-				if (solidcolor) {
-					r = v0.R; g = v0.G; b = v0.B;
+				
+				float zvalue = (v0.z * v + v1.z * z + v2.z * w);
+				if (zbuf.updateZBuffer(i, j, zvalue)) {
+					
+					r = 255;
+					g = 0;
+					b = 0;
+					switch (colortype)
+					{
+					case 0:
+						CommonMethods::getColors(w, v, z, v0.R, v0.G, v0.B, v1.R, v1.G, v1.B, v2.R, v2.G, v2.B, r, g, b);
+						//update frame buffer
+						im.setPixel(i, j, r, g, b);
+						break;
+					case 1:
+						r = r * ((zvalue - zbuf.getZMin()) / (zbuf.getZMax() - zbuf.getZMin()));
+						g = g * ((zvalue - zbuf.getZMin()) / (zbuf.getZMax() - zbuf.getZMin()));
+						b = b * ((zvalue - zbuf.getZMin()) / (zbuf.getZMax() - zbuf.getZMin()));
+						//update frame buffer 
+						im.setPixel(i, j, r, g, b);
+						break;
+					case 2:
+						//update frame buffer 
+						im.setPixel(i, j, r, g, b);
+						break;
+					default:
+						break;
+					}
 				}
-				else {
-					CommonMethods::getColors(w, v, z, v0.R, v0.G, v0.B, v1.R, v1.G, v1.B, v2.R, v2.G, v2.B, r, g, b);
-				}
-					im.setPixel(i, j, r, g, b);
 			}
 		}
 	}
@@ -98,7 +120,7 @@ Triangle::vertex Triangle::getVertex0() {
 void Triangle::setVertex0(vertex& vert){
 	v0 = vert;
 }
-void Triangle::setVertex0(int& x, int& y, int& z, unsigned int& r, unsigned int& g, unsigned int& b) {
+void Triangle::setVertex0(int& x, int& y, float& z, unsigned int& r, unsigned int& g, unsigned int& b) {
 	v0.x = x;
 	v0.y = y;
 	v0.z = z;
@@ -113,7 +135,7 @@ Triangle::vertex Triangle::getVertex1(){
 void Triangle::setVertex1(vertex& vert) {
 	v1 = vert;
 }
-void Triangle::setVertex1(int& x, int& y, int& z, unsigned int& r, unsigned int& g, unsigned int& b) {
+void Triangle::setVertex1(int& x, int& y, float& z, unsigned int& r, unsigned int& g, unsigned int& b) {
 	v1.x = x;
 	v1.y = y;
 	v1.z = z;
@@ -128,7 +150,7 @@ Triangle::vertex Triangle::getVertex2(){
 void Triangle::setVertex2(vertex& vert){
 	v2 = vert;
 }
-void Triangle::setVertex2(int& x, int& y, int& z, unsigned int& r, unsigned int& g, unsigned int& b) {
+void Triangle::setVertex2(int& x, int& y, float& z, unsigned int& r, unsigned int& g, unsigned int& b) {
 	v2.x = x;
 	v2.y = y;
 	v2.z = z;
@@ -136,3 +158,12 @@ void Triangle::setVertex2(int& x, int& y, int& z, unsigned int& r, unsigned int&
 	v2.G = g;
 	v2.B = b;
 }
+
+/*
+float test(int& x, int& y, int& x1, int& y1, int& z1, int& x2, int& y2, int& z2, int& x3, int& y3, int& z3) {
+
+	float temp = (z3 * (x - x1) * (y - y2) + z1 * (x - x2) * (y - y3) + z2 * (x - x3) * (y - y1) - z2 * (x - x1) * (y - y3) - z3 * (x - x2) * (y - y1) - z1 * (x - x3) * (y - y2))
+		/ ((x - x1) * (y - y2) + (x - x2) * (y - y3) + (x - x3) * (y - y1) - (x - x1) * (y - y3) - (x - x2) * (y - y1) - (x - x3) * (y - y2));
+}
+*/
+

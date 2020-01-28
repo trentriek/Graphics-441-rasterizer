@@ -1,8 +1,6 @@
-﻿  main.cpp
-C:\Trent\Senior Year\CSCE441\projects\Assignment1\src\main.cpp(53,34): warning C4834: discarding return value of function with 'nodiscard' attribute
-C:\Trent\Senior Year\CSCE441\projects\Assignment1\src\main.cpp(70,61): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Trent\Senior Year\CSCE441\projects\Assignment1\src\main.cpp(70,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Trent\Senior Year\CSCE441\projects\Assignment1\src\main.cpp(84,85): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Trent\Senior Year\CSCE441\projects\Assignment1\src\main.cpp(86,85): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Trent\Senior Year\CSCE441\projects\Assignment1\src\main.cpp(88,85): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+﻿  Triangle.cpp
+C:\Trent\Senior Year\CSCE441\projects\Assignment1\src\CommonMethods.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+..\src\Triangle.cpp(63,13): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+..\src\Triangle.cpp(64,13): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+..\src\Triangle.cpp(65,13): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
   A1.vcxproj -> C:\Trent\Senior Year\CSCE441\projects\Assignment1\build\Debug\A1.exe

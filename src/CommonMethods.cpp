@@ -65,4 +65,62 @@ void CommonMethods::getTriangleBoxDimensions(int& x0, int& x1, int& x2, int& y0,
 
 }
 
+CommonMethods::zBuffer::zBuffer(unsigned int width, unsigned int height, float Min, float Max) {
+	buf.resize(width);
+	for (int i = 0; i < buf.size(); i++) {
+		buf.at(i).resize(height);
+		for (int j = 0; j < buf.at(i).size(); j++) {
+			buf.at(i).at(j) = - std::numeric_limits<float>::infinity();
+		}
+	}
+	min = Min;
+	max = Max;
+}
 
+bool CommonMethods::zBuffer::updateZBuffer(int& x, int& y, float& zValue) {
+
+	if (zValue > buf.at(x).at(y) ) {
+		buf.at(x).at(y) = zValue;
+		return true;
+	}
+	return false;
+
+}
+
+float CommonMethods::zBuffer::getZvalue(int& x, int& y) {
+	return buf.at(x).at(y);
+}
+
+float CommonMethods::zBuffer::getZMin() {
+	return min;
+}
+void CommonMethods::zBuffer::setZMin(float Min) {
+	min = Min;
+}
+float CommonMethods::zBuffer::getZMax() {
+	return max;
+}
+void CommonMethods::zBuffer::setZMax(float Max) {
+	max = Max;
+}
+
+
+CommonMethods::frameBuffer::frameBuffer(unsigned int width, unsigned int height) {
+	buf.resize(width);
+	for (int i = 0; i < buf.size(); i++) {
+		buf.at(i).resize(height);
+		for (int j = 0; j < buf.at(i).size(); j++) {
+			buf.at(i).at(j).r = 0; buf.at(i).at(j).g = 0; buf.at(i).at(j).b = 0;
+		}
+	}
+}
+
+void CommonMethods::frameBuffer::updateFBuffer(int& x, int& y, unsigned short int& r, unsigned short int& g, unsigned short int& b) {
+	buf.at(x).at(y).r = r; buf.at(x).at(y).g = g; buf.at(x).at(y).b = b;
+	return;
+}
+
+unsigned short int * CommonMethods::frameBuffer::getFvalue(int& x, int& y) {
+	unsigned short int temp[] = { buf.at(x).at(y).r , buf.at(x).at(y).g , buf.at(x).at(y).b };
+	return temp;
+}
